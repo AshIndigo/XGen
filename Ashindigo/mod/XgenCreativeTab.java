@@ -14,7 +14,7 @@ public final class XgenCreativeTab extends CreativeTabs
     @SideOnly(Side.CLIENT)
     public int getTabIconItemIndex()
     {
-        return MainXgenMod.RedXgenCrystal.itemID;
+        return XgenRCore.RedXgenCrystal.itemID;
        
     }
 

@@ -28,7 +28,7 @@ public class XgenEventManager implements IWorldGenerator
        private void generateSurface(World world, Random random, int x, int z)
        {
              this.addOreSpawn(XgenRCore.RedXgenOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 8, 15, 50);
-             this.addOreSpawn(MainXgenMod.BlueXgenOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 8, 15, 50);
+             this.addOreSpawn(XgenBCore.BlueXgenOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 8, 15, 50);
        }
 
        private void generateNether(World world, Random random, int x, int z)
