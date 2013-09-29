@@ -44,7 +44,7 @@ public void load(FMLInitializationEvent event)
 	//XgenConfigurationHander.init(new File(modid).getAbsolutePath() + File.separator + modid + File.separator + modid + ".cfg"));
 	XgenLogHelper.log(Level.INFO, "Starting XgenCraft By Ash Indigo");
 	XgenLogHelper.log(Level.INFO, "Loading Core Modules");
-	//GameRegistry.registerWorldGenerator(eventmanager);
+	GameRegistry.registerWorldGenerator(eventmanager);
 	//XgenHooks.addHooks();
 	//XgenLaunguageHandler.init();
 	XgenRCore.addCore();
