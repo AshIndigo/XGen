@@ -1,5 +1,6 @@
 package XGen.Ashindigo.mod;
 
+import java.io.File;
 import java.util.logging.Level;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,9 +15,9 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.DimensionManager;
 import XGen.Ashindigo.mod.Armor.*;
-import XGen.Ashindigo.mod.TileEntities.*;
-import XGen.Ashindigo.mod.blocks.*;
-import XGen.Ashindigo.mod.items.*;
+import XGen.Ashindigo.mod.BlueCore.XgenBCore;
+import XGen.Ashindigo.mod.RedCore.XgenRCore;
+import XGen.Ashindigo.mod.lib.*;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.*;
 import cpw.mods.fml.common.Mod.*;
@@ -40,10 +41,12 @@ public static MainXgenMod instance = new MainXgenMod();
 @EventHandler
 public void load(FMLInitializationEvent event)
 {	
+	//XgenConfigurationHander.init(new File(modid).getAbsolutePath() + File.separator + modid + File.separator + modid + ".cfg"));
 	XgenLogHelper.log(Level.INFO, "Starting XgenCraft By Ash Indigo");
 	XgenLogHelper.log(Level.INFO, "Loading Core Modules");
 	//GameRegistry.registerWorldGenerator(eventmanager);
 	//XgenHooks.addHooks();
+	//XgenLaunguageHandler.init();
 	XgenRCore.addCore();
 	XgenBCore.addCore();
 	

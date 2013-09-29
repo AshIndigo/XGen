@@ -2,6 +2,9 @@ package XGen.Ashindigo.mod;
 
 import java.util.Random;
 
+import XGen.Ashindigo.mod.BlueCore.XgenBCore;
+import XGen.Ashindigo.mod.RedCore.XgenRCore;
+
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;

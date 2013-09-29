@@ -1,5 +1,6 @@
 package XGen.Ashindigo.mod;
 
+import XGen.Ashindigo.mod.RedCore.XgenRCore;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;

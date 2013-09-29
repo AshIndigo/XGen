@@ -1,6 +1,7 @@
 package XGen.Ashindigo.mod.Armor;
 
 import XGen.Ashindigo.mod.*;
+import XGen.Ashindigo.mod.RedCore.XgenRCore;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
