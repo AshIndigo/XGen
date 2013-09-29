@@ -19,16 +19,11 @@ import XGen.Ashindigo.mod.blocks.*;
 import XGen.Ashindigo.mod.items.*;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.*;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Init;
-import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.Mod.*;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.common.network.*;
+import cpw.mods.fml.common.registry.*;
 import XGen.Ashindigo.mod.*;
 @Mod(modid = MainXgenMod.modid, name = "XGenCraft", version = "1.0")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -46,10 +41,9 @@ public static MainXgenMod instance = new MainXgenMod();
 public void load(FMLInitializationEvent event)
 {	
 	XgenLogHelper.log(Level.INFO, "Starting XgenCraft By Ash Indigo");
-	XgenLogHelper.log(Level.INFO, "Registering Things");
-	GameRegistry.registerWorldGenerator(eventmanager);
-	XgenLogHelper.log(Level.INFO, "Adding Hooks,Recipes,Names And Dimensional Stuff");
-	XgenHooks.addHooks();
+	XgenLogHelper.log(Level.INFO, "Loading Core Modules");
+	//GameRegistry.registerWorldGenerator(eventmanager);
+	//XgenHooks.addHooks();
 	XgenRCore.addCore();
 	XgenBCore.addCore();
 	

@@ -1,13 +1,12 @@
 package XGen.Ashindigo.mod.Armor;
 
-import XGen.Ashindigo.mod.MainXgenMod;
+import XGen.Ashindigo.mod.*;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.IArmorTextureProvider;
 
-public class RedXgenArmor extends ItemArmor implements IArmorTextureProvider
+public class RedXgenArmor extends ItemArmor
 {
 
     public RedXgenArmor(int par1, EnumArmorMaterial par2EnumArmorMaterial, int par3, int par4)
@@ -22,11 +21,11 @@ public class RedXgenArmor extends ItemArmor implements IArmorTextureProvider
 
     public String getArmorTextureFile(ItemStack par1)
     {
-        if ( par1.itemID==MainXgenMod.RedXgenHelmet.itemID||par1.itemID==MainXgenMod.RedXgenChestPlate.itemID||par1.itemID==MainXgenMod.RedXgenBoots.itemID)
+        if ( par1.itemID==XgenRCore.RedXgenHelmet.itemID||par1.itemID==XgenRCore.RedXgenChestPlate.itemID||par1.itemID==XgenRCore.RedXgenBoots.itemID)
         {
                 return "/blfngl/tutorial/textures/MythArmor_1.png";
         }
-        if (par1.itemID==MainXgenMod.RedXgenLegs.itemID)
+        if (par1.itemID==XgenRCore.RedXgenLegs.itemID)
         {
             return "/blfngl/tutorial/textures/MythArmor_2.png";
         }

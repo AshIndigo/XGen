@@ -30,10 +30,10 @@ public class XgenRCore {
 	public static Item RedXgenPickaxe;
 	public static Item RedXgenBow;
 	//public static Block RedXgenChest;
-	//public static Item RedXgenHelmet;
-	//public static Item RedXgenChestPlate;
-	//public static Item RedXgenLegs;
-	//public static Item RedXgenBoots;
+	public static Item RedXgenHelmet;
+	public static Item RedXgenChestPlate;
+	public static Item RedXgenLegs;
+	public static Item RedXgenBoots;
 	public static Item RedXgenCrystal;
 	public static EnumArmorMaterial RedXgenArmor= net.minecraftforge.common.EnumHelper.addArmorMaterial("RedXgenArmor", 47, new int[]{6, 10, 8, 6}, 28);
 	
@@ -50,10 +50,10 @@ public class XgenRCore {
 	RedXgenSword = new RedXgenSword(3003, RedXgenTool).setUnlocalizedName("redxgensword").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
 	RedXgenSpade = new RedXgenSpade(3004, RedXgenTool).setUnlocalizedName("redxgenspade").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
 	RedXgenBow = new RedXgenBow(3005).setUnlocalizedName("redxgenbow").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
-	//RedXgenHelmet = new RedXgenArmor(3002, XGen.Ashindigo.mod.MainXgenMod.RedXgenArmor,1, 0).setUnlocalizedName("redxgenhelmet").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
-	//RedXgenChestPlate = new RedXgenArmor(3003, XGen.Ashindigo.mod.MainXgenMod.RedXgenArmor, 1, 1).setUnlocalizedName("redxgenplate").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
-	//RedXgenLegs = new RedXgenArmor(3004, XGen.Ashindigo.mod.MainXgenMod.RedXgenArmor, 1, 2).setUnlocalizedName("redxgenlegs").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
-	//RedXgenBoots = new RedXgenArmor(3006, XGen.Ashindigo.mod.MainXgenMod.RedXgenArmor, 1, 3).setUnlocalizedName("redxgenboots").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
+	RedXgenHelmet = new XGen.Ashindigo.mod.Armor.RedXgenArmor(3002, RedXgenArmor,1, 0).setUnlocalizedName("redxgenhelmet").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
+	RedXgenChestPlate = new XGen.Ashindigo.mod.Armor.RedXgenArmor(3003, RedXgenArmor, 1, 1).setUnlocalizedName("redxgenplate").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
+	RedXgenLegs = new XGen.Ashindigo.mod.Armor.RedXgenArmor(3004, RedXgenArmor, 1, 2).setUnlocalizedName("redxgenlegs").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
+	RedXgenBoots = new XGen.Ashindigo.mod.Armor.RedXgenArmor(3006, RedXgenArmor, 1, 3).setUnlocalizedName("redxgenboots").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
 	//RedXgenChest = new XgenRedChest(2000, 0).setUnlocalizedName("xgenredchest").setCreativeTab(XGen.Ashindigo.mod.MainXgenMod.XgenCreativeTab);
 	GameRegistry.registerBlock(RedXgenBlock, XGen.Ashindigo.mod.MainXgenMod.modid + RedXgenBlock.getUnlocalizedName());
 	GameRegistry.registerBlock(RedXgenOre, XGen.Ashindigo.mod.MainXgenMod.modid + RedXgenOre.getUnlocalizedName());
@@ -69,10 +69,10 @@ public class XgenRCore {
 	LanguageRegistry.addName(RedXgenSpade, "Red Xgen Spade");
 	LanguageRegistry.addName(RedXgenPickaxe, "Red Xgen Pickaxe");
 	LanguageRegistry.addName(RedXgenBow, "Red Xgen Bow");
-	//LanguageRegistry.addName(RedXgenHelmet, "Red Xgen Helmet");
-	//LanguageRegistry.addName(RedXgenChestPlate, "Red Xgen Chestplate");
-	//LanguageRegistry.addName(RedXgenLegs, "Red Xgen Legs");
-	//LanguageRegistry.addName(RedXgenBoots, "Red Xgen Boots");
+	LanguageRegistry.addName(RedXgenHelmet, "Red Xgen Helmet");
+	LanguageRegistry.addName(RedXgenChestPlate, "Red Xgen Chestplate");
+	LanguageRegistry.addName(RedXgenLegs, "Red Xgen Legs");
+	LanguageRegistry.addName(RedXgenBoots, "Red Xgen Boots");
 	//LanguageRegistry.addName(RedXgenChest, "Red Xgen Chest");
 	GameRegistry.addRecipe(new ItemStack(XgenRCore.RedXgenBlock,1), new Object[]{
 		   "TTT",
@@ -99,24 +99,24 @@ public class XgenRCore {
 		   "TX ",
 		   " X ",
 		   'T',RedXgenCrystal, 'X',Item.stick});
-	   //GameRegistry.addRecipe(new ItemStack(RedXgenChestPlate,1), new Object[]{
-		   //"T T",
-		   //"TTT",
-		   //"TTT",
-		   //'T',RedXgenCrystal});
-	   //GameRegistry.addRecipe(new ItemStack(RedXgenHelmet,1), new Object[]{
-		   //"TTT",
-		   //"T T",
-		   //'T',RedXgenCrystal});
-	   //GameRegistry.addRecipe(new ItemStack(RedXgenBoots,1), new Object[]{
-		   //"T T",
-		   //"T T",
-		   //'T',RedXgenCrystal});
-	   //GameRegistry.addRecipe(new ItemStack(RedXgenLegs,1), new Object[]{
-		   //"TTT",
-		   //"T T",
-		   //"T T",
-		   //'T',RedXgenCrystal});
+	   GameRegistry.addRecipe(new ItemStack(RedXgenChestPlate,1), new Object[]{
+		   "T T",
+		   "TTT",
+		   "TTT",
+		   'T',RedXgenCrystal});
+	   GameRegistry.addRecipe(new ItemStack(RedXgenHelmet,1), new Object[]{
+		   "TTT",
+		   "T T",
+		   'T',RedXgenCrystal});
+	   GameRegistry.addRecipe(new ItemStack(RedXgenBoots,1), new Object[]{
+		   "T T",
+		   "T T",
+		   'T',RedXgenCrystal});
+	   GameRegistry.addRecipe(new ItemStack(RedXgenLegs,1), new Object[]{
+		   "TTT",
+		   "T T",
+		   "T T",
+		   'T',RedXgenCrystal});
 	   
 	   
 	   		
