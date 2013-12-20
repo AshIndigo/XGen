@@ -1,6 +1,5 @@
 package XGen.Ashindigo.mod;
 
-import XGen.Ashindigo.mod.RedCore.XgenRCore;
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,7 +14,7 @@ public final class XgenCreativeTab extends CreativeTabs
     @SideOnly(Side.CLIENT)
     public int getTabIconItemIndex()
     {
-        return XgenRCore.RedXgenCrystal.itemID;
+        return MainXgenMod.RedXgenCrystal.itemID;
        
     }
 
